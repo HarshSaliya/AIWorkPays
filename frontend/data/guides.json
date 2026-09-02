@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "written-assessment",
+    "title": "How the written assessment actually works",
+    "dek": "Most AI-work platforms gate entry behind a written test rather than a CV. What they're measuring, and what fails people.",
+    "read_min": 6,
+    "updated": "2026-09",
+    "status": "draft"
+  },
+  {
+    "slug": "payout-rails",
+    "title": "Getting paid: payout rails by country",
+    "dek": "PayPal, Wise, Payoneer, Dots and direct bank transfer — which platforms use what, and where each one actually lands.",
+    "read_min": 8,
+    "updated": "2026-09",
+    "status": "draft"
+  },
+  {
+    "slug": "red-flags",
+    "title": "Red flags in AI-work platforms",
+    "dek": "Unpaid qualification marathons, vanishing projects, withdrawal minimums designed not to be met. How to spot them early.",
+    "read_min": 5,
+    "updated": "2026-09",
+    "status": "draft"
+  }
+]
