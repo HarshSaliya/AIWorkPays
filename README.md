@@ -1,4 +1,3 @@
-
 # AI Work Log — Project Plan
 
 A referral site listing AI-work platforms and job posts. Visitors click referral links; I earn when they sign up.
