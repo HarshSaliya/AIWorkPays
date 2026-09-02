@@ -1,0 +1,46 @@
+[
+  {
+    "title": "AI Training Data Reviewer (Remote)",
+    "company": "Placeholder Labs",
+    "desc": "Review and rate model outputs for factual accuracy. Fully remote, flexible hours, contract basis. Sample entry — replace with a real posting before launch.",
+    "url": "https://example.com/job/ai-training-data-reviewer",
+    "disclosed": false,
+    "referral_terms": "",
+    "posted": "2026-09-01",
+    "location": "Remote — worldwide",
+    "pay": "$25–35/hr"
+  },
+  {
+    "title": "Backend Developer (Python / FastAPI)",
+    "company": "Placeholder Co",
+    "desc": "Build and maintain internal data APIs. Remote-first, Python and Postgres. Sample entry — replace with a real posting before launch.",
+    "url": "https://example.com/job/backend-developer-python",
+    "disclosed": false,
+    "referral_terms": "",
+    "posted": "2026-08-28",
+    "location": "Remote — India",
+    "pay": "₹12–18 LPA"
+  },
+  {
+    "title": "Domain Expert — Finance (Contract)",
+    "company": "Placeholder AI",
+    "desc": "Write and review finance-domain evaluation tasks for a frontier model. Part-time, project-based. Sample entry — replace with a real posting before launch.",
+    "url": "https://example.com/job/domain-expert-finance",
+    "disclosed": false,
+    "referral_terms": "",
+    "posted": "2026-08-24",
+    "location": "Remote — US, UK, India",
+    "pay": "$40–60/hr"
+  },
+  {
+    "title": "Voice Data Contributor (Part-time)",
+    "company": "Placeholder Speech",
+    "desc": "Record prompted conversations used to train speech models. No experience needed. Sample entry — replace with a real posting before launch.",
+    "url": "https://example.com/job/voice-data-contributor",
+    "disclosed": false,
+    "referral_terms": "",
+    "posted": "2026-08-20",
+    "location": "Remote — worldwide",
+    "pay": "$18–28/hr"
+  }
+]

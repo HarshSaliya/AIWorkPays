@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# TODO: swap the host once the domain is bought.
+Sitemap: https://aiworkpays.example/sitemap.xml

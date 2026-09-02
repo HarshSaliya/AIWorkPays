@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Work Pays — a ledger of platforms that pay you to train AI</title>
+<meta name="description" content="A vetted ledger of platforms paying people to train AI. Advertised pay ranges, entry gates, country eligibility, and every referral link disclosed up front.">
+<link rel="canonical" href="https://aiworkpays.example/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AI Work Pays — platforms that pay you to train AI">
+<meta property="og:description" content="Advertised pay ranges, entry gates, country eligibility, and every referral link disclosed up front.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-base="">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="masthead">
+  <div class="wrap masthead__inner">
+    <a class="brand" href="index.html">aiworkpays <span class="brand__mark">paid</span></a>
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html">Platforms</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="jobs.html">Jobs</a>
+      <a href="guides.html">Guides</a>
+      <a href="countries/index.html">By country</a>
+      <a href="disclosure.html">Referrals</a>
+      <a href="about.html">About</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Switch colour theme">◐</button>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="wrap">
+      <p class="hero__eyebrow">Get paid to train AI — no hype, no scraped lists</p>
+      <h1>Which platform should you apply to first?</h1>
+      <p class="hero__lede">
+        A working ledger of platforms that pay people to train AI. Advertised rates with the
+        date they were checked, the actual entry gate, where each one accepts applicants —
+        and every referral link marked before you click it.
+      </p>
+      <div class="hero__cta">
+        <a class="btn" href="quiz.html">Take the 7-question quiz</a>
+        <a class="btn btn--ghost" href="#ledger">Browse the ledger</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="ledger">
+    <div class="wrap">
+      <div class="section__head">
+        <p class="kicker">The ledger</p>
+        <h2>Every platform, with the fine print</h2>
+        <p>
+          Pay figures are what each platform advertises, not verified earnings — each row carries
+          the month it was last checked. Open <strong>Details</strong> for the entry gate,
+          country eligibility and the caveat worth knowing.
+        </p>
+      </div>
+
+      <div class="filters" id="ledger-controls">
+        <span class="filters__label">Sort</span>
+        <label class="visually-hidden" for="sort">Sort platforms</label>
+        <select class="chip" id="sort" data-sort>
+          <option value="default">Default order</option>
+          <option value="pay">Highest advertised pay</option>
+          <option value="name">A–Z</option>
+        </select>
+        <span class="filters__label">Open to</span>
+        <label class="visually-hidden" for="country">Filter by country</label>
+        <select class="chip" id="country" data-country>
+          <option value="">Anywhere</option>
+          <option value="us">United States</option>
+          <option value="ca">Canada</option>
+          <option value="uk">United Kingdom</option>
+          <option value="in">India</option>
+          <option value="ph">Philippines</option>
+          <option value="ng">Nigeria</option>
+          <option value="ke">Kenya</option>
+        </select>
+        <span class="count"></span>
+      </div>
+
+      <div class="ledger" id="platforms"></div>
+
+      <p class="sourced">
+        Status <strong>Paying</strong> means the platform pays its contributors and is operating —
+        judged from its own published terms and public worker reports on the date shown.
+        It is not a personal earnings claim and not a promise you will be accepted.
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <a class="brand" href="index.html">aiworkpays <span class="brand__mark">paid</span></a>
+        <p class="footer__about">
+          A ledger of platforms that pay people to train AI. Advertised rates, real entry gates,
+          and every referral link disclosed.
+        </p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Platforms</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a href="jobs.html">Jobs</a></li>
+          <li><a href="guides.html">Guides</a></li>
+          <li><a href="countries/index.html">By country</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Trust</h4>
+        <ul>
+          <li><a href="disclosure.html">Referrals &amp; disclosure</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer__legal">
+      Disclosure: some links on this site are referral links — I earn a bonus when you sign up
+      through them. It never changes your pay. Links that are not referral links are labelled as
+      direct links. Pay figures are advertised rates, not guaranteed earnings.
+    </p>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+<script>renderPlatforms('platforms', { controls: 'ledger-controls' });</script>
+</body>
+</html>
