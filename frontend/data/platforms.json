@@ -131,7 +131,7 @@
     },
     "url": "https://t.mercor.com/4pchP",
     "disclosed": true,
-    "referral_terms": "",
+    "referral_terms": "The referral signs up via the link and earns on accepted offers.",
     "honest_note": "Plenty of applicants complete the interview and are never matched to a project.",
     "tags": {
       "experience": [
@@ -171,7 +171,7 @@
       "pay_style:ceiling": "One of the highest advertised rate bands in the category.",
       "strength:professional": "Built around specialist expertise rather than generalist volume."
     },
-    "referral_threshold": ""
+    "referral_threshold": "The referral signs up via the link and earns on accepted offers."
   },
   {
     "slug": "micro1",
@@ -185,9 +185,9 @@
       "as_of": "2026-09",
       "source": "advertised"
     },
-    "url": "https://micro1.ai",
-    "disclosed": false,
-    "referral_terms": "",
+    "url": "https://refer.micro1.ai/referral/jobs?referralCode=45e55865-b90d-4099-9750-8d0cff7f56b2&utm_source=referral&utm_medium=share&utm_campaign=job_referral",
+    "disclosed": true,
+    "referral_terms": "The referral is hired and completes 10+ hrs of paid work.",
     "honest_note": "Matching depends on open client demand, so acceptance doesn't mean immediate work.",
     "tags": {
       "experience": [
@@ -227,7 +227,7 @@
       "countries:global": "Hires globally — open where you are.",
       "experience:pro": "Professional technical background is what their vetting looks for."
     },
-    "referral_threshold": ""
+    "referral_threshold": "The referral is hired and completes 10+ hrs of paid work."
   },
   {
     "slug": "alignerr",
@@ -243,7 +243,7 @@
     },
     "url": "https://alignerr.com",
     "disclosed": false,
-    "referral_terms": "",
+    "referral_terms": "Referral completes onboarding ($25), then works 10 hrs ($125).",
     "honest_note": "The headline $125/hr figure applies to a narrow band of specialists, not general applicants.",
     "tags": {
       "experience": [
@@ -286,7 +286,7 @@
       "gate:written": "Entry is a skills assessment, not an interview.",
       "hours:under5": "Task-based, so small weekly commitments still work."
     },
-    "referral_threshold": ""
+    "referral_threshold": "Referral completes onboarding ($25), then works 10 hrs ($125)."
   },
   {
     "slug": "handshake-ai",
@@ -302,7 +302,7 @@
     },
     "url": "https://joinhandshake.com/move-program/referral?referralCode=D7FC7A&utm_source=referral",
     "disclosed": true,
-    "referral_terms": "",
+    "referral_terms": "10 hrs of paid production work, within a 6-month window.",
     "honest_note": "Country availability changes without notice — check before investing time in an application.",
     "tags": {
       "experience": [
@@ -338,7 +338,7 @@
       "pay_style:steady": "Predictable project hours are the whole pitch.",
       "countries:in": "Currently open to applicants in India."
     },
-    "referral_threshold": ""
+    "referral_threshold": "10 hrs of paid production work, within a 6-month window."
   },
   {
     "slug": "afterquery",
@@ -354,7 +354,7 @@
     },
     "url": "https://experts.afterquery.com/apply?ref=WIxsnTxFwPT6F4yDwlxWpqA48uX2",
     "disclosed": true,
-    "referral_terms": "",
+    "referral_terms": "Get priority access to better-paying projects + exclusive opportunities",
     "honest_note": "Project-based, so income is lumpy rather than a steady weekly figure.",
     "tags": {
       "experience": [
@@ -629,7 +629,7 @@
     "url": "https://www.appen.com",
     "disclosed": false,
     "referral_terms": "",
-    "honest_note": "Qualification exams are long and unpaid, and projects can end abruptly.",
+    "honest_note": "Contributor reports describe inconsistent project availability, and it leans heavily on which country and language you're in — some regions see steady work, others see very little. Check what's actually open before taking the (unpaid) qualification exam.",
     "tags": {
       "experience": [
         "none",
