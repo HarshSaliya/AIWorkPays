@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mockup B — Comparison table</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme: light;
+  --paper:#FCFCFD; --sunk:#F4F5F7; --ink:#101828; --soft:#475467; --faint:#98A2B3;
+  --rule:#E4E7EC; --accent:#175CD3; --accent-bg:#EFF4FF; --ok:#067647; --ok-bg:#ECFDF3;
+  --sans:"Inter",system-ui,sans-serif; --mono:"IBM Plex Mono",monospace;
+}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.5;font-size:15px}
+.wrap{max-width:78rem;margin-inline:auto;padding-inline:1.25rem}
+a{color:inherit}
+
+.top{border-bottom:1px solid var(--rule);background:#fff}
+.top__in{display:flex;align-items:center;gap:1rem;min-height:3.75rem;flex-wrap:wrap}
+.logo{font:700 1.05rem var(--sans);letter-spacing:-.02em;text-decoration:none;margin-right:auto}
+.top nav{display:flex;gap:1.15rem;flex-wrap:wrap}
+.top nav a{font-size:.875rem;color:var(--soft);text-decoration:none}
+.cta{display:inline-flex;align-items:center;gap:.4rem;background:var(--accent);color:#fff;
+     font:600 .85rem var(--sans);padding:.6rem 1rem;border-radius:6px;text-decoration:none;border:0;cursor:pointer}
+.cta--ghost{background:#fff;color:var(--ink);border:1px solid var(--rule)}
+
+.hero{padding:clamp(2rem,5vw,3.25rem) 0;border-bottom:1px solid var(--rule);background:#fff}
+.hero h1{font:700 clamp(1.9rem,4.5vw,2.9rem)/1.1 var(--sans);letter-spacing:-.03em;margin:0 0 .75rem;max-width:22ch}
+.hero p{color:var(--soft);max-width:60ch;margin:0 0 1.5rem;font-size:1.02rem}
+.hero__cta{display:flex;gap:.6rem;flex-wrap:wrap}
+
+.toolbar{display:flex;gap:.6rem;align-items:center;flex-wrap:wrap;padding:1.25rem 0 .85rem}
+.toolbar label{font:600 .7rem var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--faint)}
+select{font:500 .85rem var(--sans);padding:.45rem .65rem;border:1px solid var(--rule);border-radius:6px;background:#fff;color:var(--ink)}
+.hint{margin-left:auto;font:500 .8rem var(--mono);color:var(--faint)}
+
+.tablewrap{overflow-x:auto;border:1px solid var(--rule);border-radius:10px;background:#fff}
+table{border-collapse:collapse;width:100%;min-width:56rem}
+th,td{text-align:left;padding:.8rem 1rem;border-bottom:1px solid var(--rule);vertical-align:middle}
+thead th{position:sticky;top:0;background:var(--sunk);font:600 .68rem var(--mono);letter-spacing:.1em;
+         text-transform:uppercase;color:var(--soft);cursor:pointer;white-space:nowrap;user-select:none}
+thead th:hover{color:var(--ink)}
+thead th[aria-sort]::after{content:" ▾";opacity:.4}
+thead th[aria-sort="ascending"]::after{content:" ▲";opacity:1}
+thead th[aria-sort="descending"]::after{content:" ▼";opacity:1}
+tbody tr:hover{background:var(--accent-bg)}
+tbody tr:last-child td{border-bottom:0}
+.name{font-weight:600}
+.sub{color:var(--faint);font-size:.8rem;display:block;margin-top:.15rem}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+.pill{display:inline-block;font:600 .7rem var(--mono);padding:.2rem .45rem;border-radius:4px;background:var(--sunk);color:var(--soft);white-space:nowrap}
+.pill--ok{background:var(--ok-bg);color:var(--ok)}
+.flags{font-family:var(--mono);font-size:.8rem;color:var(--soft);white-space:nowrap}
+td .cta{padding:.45rem .8rem;font-size:.8rem}
+.disc{display:block;font-size:.68rem;color:var(--faint);margin-top:.3rem;max-width:11rem}
+.state{padding:2rem;color:var(--soft)}
+.legend{font-size:.8rem;color:var(--faint);margin:1rem 0 2.5rem;max-width:70ch}
+
+@media (max-width:60rem){
+  table{min-width:0}
+  thead{display:none}
+  tbody tr{display:grid;grid-template-columns:1fr auto;gap:.2rem .75rem;padding:1rem;border-bottom:1px solid var(--rule)}
+  tbody td{border:0;padding:0}
+  td[data-l]::before{content:attr(data-l) " ";font:600 .65rem var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--faint);display:block}
+  td:nth-child(1){grid-column:1/-1}
+  td:nth-child(5){grid-column:1/-1;margin-top:.6rem}
+}
+</style>
+</head>
+<body>
+
+<header class="top"><div class="wrap top__in">
+  <a class="logo" href="#">aiworkpays</a>
+  <nav><a href="#">Platforms</a><a href="#">Quiz</a><a href="#">Jobs</a><a href="#">Guides</a><a href="#">About</a></nav>
+  <a class="cta" href="#">Find my platform</a>
+</div></header>
+
+<section class="hero"><div class="wrap">
+  <h1>Compare every platform that pays you to train AI</h1>
+  <p>Advertised rate, entry gate, country eligibility and payout rail — side by side, all dated. Sort by whatever matters to you.</p>
+  <div class="hero__cta">
+    <a class="cta" href="#">Find my platform →</a>
+    <a class="cta cta--ghost" href="#t">Jump to the table</a>
+  </div>
+</div></section>
+
+<div class="wrap" id="t">
+  <div class="toolbar">
+    <label for="c">Open to</label>
+    <select id="c">
+      <option value="">Any country</option>
+      <option value="us">United States</option><option value="ca">Canada</option>
+      <option value="uk">United Kingdom</option><option value="in">India</option>
+      <option value="ph">Philippines</option><option value="ng">Nigeria</option><option value="ke">Kenya</option>
+    </select>
+    <label for="g">Entry gate</label>
+    <select id="g">
+      <option value="">Any gate</option>
+      <option value="none">No interview</option>
+      <option value="written">Written test</option>
+      <option value="video">Video interview</option>
+    </select>
+    <span class="hint" id="count"></span>
+  </div>
+
+  <div class="tablewrap">
+    <table>
+      <thead><tr>
+        <th data-k="name">Platform</th>
+        <th data-k="pay" aria-sort="descending">Advertised pay</th>
+        <th data-k="gate">Entry gate</th>
+        <th data-k="open">Open to</th>
+        <th>Apply</th>
+      </tr></thead>
+      <tbody id="rows"><tr><td colspan="5" class="state">Loading…</td></tr></tbody>
+    </table>
+  </div>
+  <p class="legend">Pay is the rate each platform advertises, checked Sep 2026 — not verified earnings, and the top of a range is rarely typical. “Open to” lists the countries each platform publishes; 🌍 means broadly international.</p>
+</div>
+
+<script>
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const ceiling = p => { const n = String(p.pay?.display||'').match(/\d+(?:\.\d+)?/g); return n ? Math.max(...n.map(Number)) : 0; };
+const GATE = { none:'No interview', written:'Written test', video:'Video interview' };
+const CN = { us:'US', ca:'CA', uk:'UK', in:'IN', ph:'PH', ng:'NG', ke:'KE', other:'Other' };
+let DATA = [], sortKey = 'pay', sortDir = -1;
+
+const openTo = p => { const c = p.tags?.countries || []; return c.length >= 6 ? '🌍 International' : c.map(x => CN[x] || x).join(' · '); };
+
+function draw() {
+  const c = document.getElementById('c').value, g = document.getElementById('g').value;
+  let rows = DATA.filter(p => (!c || (p.tags?.countries||[]).includes(c)) && (!g || p.tags?.gate === g));
+  rows.sort((a, b) => {
+    let v;
+    if (sortKey === 'pay') v = ceiling(a) - ceiling(b);
+    else if (sortKey === 'gate') v = String(a.tags?.gate).localeCompare(String(b.tags?.gate));
+    else if (sortKey === 'open') v = (a.tags?.countries||[]).length - (b.tags?.countries||[]).length;
+    else v = a.name.localeCompare(b.name);
+    return v * sortDir;
+  });
+  document.getElementById('count').textContent = rows.length + ' of ' + DATA.length + ' platforms';
+  document.getElementById('rows').innerHTML = rows.length ? rows.map(p => {
+    const rel = p.disclosed ? 'noopener nofollow sponsored' : 'noopener nofollow';
+    return `<tr>
+      <td><span class="name">${esc(p.name)}</span><span class="sub">${esc(p.blurb)}</span></td>
+      <td data-l="Pay" class="num">${esc(p.pay?.display || '—')}</td>
+      <td data-l="Gate"><span class="pill${p.tags?.gate === 'none' ? ' pill--ok' : ''}">${esc(GATE[p.tags?.gate] || '—')}</span></td>
+      <td data-l="Open to" class="flags">${esc(openTo(p))}</td>
+      <td><a class="cta" href="${esc(p.url)}" target="_blank" rel="${rel}">Apply →</a>
+          <span class="disc">${p.disclosed ? 'Referral link — I earn a bonus.' : 'Direct link — earns nothing.'}</span></td>
+    </tr>`;
+  }).join('') : '<tr><td colspan="5" class="state">No platform matches that combination.</td></tr>';
+}
+
+document.querySelectorAll('thead th[data-k]').forEach(th => th.addEventListener('click', () => {
+  const k = th.dataset.k;
+  sortDir = (k === sortKey) ? -sortDir : (k === 'name' ? 1 : -1);
+  sortKey = k;
+  document.querySelectorAll('thead th').forEach(x => x.removeAttribute('aria-sort'));
+  th.setAttribute('aria-sort', sortDir === 1 ? 'ascending' : 'descending');
+  draw();
+}));
+document.getElementById('c').addEventListener('change', draw);
+document.getElementById('g').addEventListener('change', draw);
+
+fetch('../data/platforms.json').then(r => r.json()).then(d => { DATA = d; draw(); })
+  .catch(e => { document.getElementById('rows').innerHTML = '<tr><td colspan="5" class="state">Could not load data: ' + esc(e.message) + '</td></tr>'; });
+</script>
+</body>
+</html>

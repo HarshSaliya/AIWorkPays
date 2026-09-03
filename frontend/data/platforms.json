@@ -6,19 +6,44 @@
     "last_checked": "2026-09",
     "blurb": "Generalist AI-training work. The entry gate is a written assessment, then steady project work.",
     "detail": "You write, edit and rate model responses across general and specialist projects. Entry is a written assessment rather than a CV screen, so background matters less than clear writing. Coding projects sit on a separate, much higher rate band once you qualify for them.",
-    "pay": { "display": "$20–30/hr general · $50–75/hr coding", "as_of": "2026-09", "source": "advertised" },
+    "pay": {
+      "display": "$20–30/hr general · $50–75/hr coding",
+      "as_of": "2026-09",
+      "source": "advertised"
+    },
     "url": "https://www.dataannotation.tech",
     "disclosed": false,
     "referral_terms": "",
     "honest_note": "Assessment results can take weeks, and project availability swings week to week.",
     "tags": {
-      "experience": ["none", "side", "pro"],
-      "education": ["none", "college", "bachelors", "advanced"],
-      "countries": ["us", "ca", "uk"],
-      "hours": ["under5", "5-10", "10-20", "20+"],
+      "experience": [
+        "none",
+        "side",
+        "pro"
+      ],
+      "education": [
+        "none",
+        "college",
+        "bachelors",
+        "advanced"
+      ],
+      "countries": [
+        "us",
+        "ca",
+        "uk"
+      ],
+      "hours": [
+        "under5",
+        "5-10",
+        "10-20",
+        "20+"
+      ],
       "pay_style": "steady",
       "gate": "written",
-      "strength": ["generalist", "coding"]
+      "strength": [
+        "generalist",
+        "coding"
+      ]
     },
     "reasons": {
       "gate:written": "The entry gate is a written assessment about clear writing, not a résumé.",
@@ -27,7 +52,8 @@
       "pay_style:steady": "Project work is comparatively steady once you're through the assessment.",
       "experience:none": "No prior AI work is required — the assessment is the only gate.",
       "education:none": "No degree requirement; the written assessment decides it."
-    }
+    },
+    "referral_threshold": ""
   },
   {
     "slug": "outlier",
@@ -36,19 +62,50 @@
     "last_checked": "2026-09",
     "blurb": "Scale AI's contributor platform. Broad project mix, from generalist writing to domain expert tasks.",
     "detail": "Projects are posted to a marketplace and you qualify into them individually. Rates vary sharply by project type — domain-expert and coding queues pay far above the generalist queues. Onboarding is a written qualification per project rather than one global gate.",
-    "pay": { "display": "$15–50/hr, varies by project", "as_of": "2026-09", "source": "advertised" },
+    "pay": {
+      "display": "$15–50/hr, varies by project",
+      "as_of": "2026-09",
+      "source": "advertised"
+    },
     "url": "https://outlier.ai",
     "disclosed": false,
     "referral_terms": "",
     "honest_note": "Work volume is famously inconsistent — projects appear and dry up with little warning.",
     "tags": {
-      "experience": ["none", "side", "pro"],
-      "education": ["none", "college", "bachelors", "advanced"],
-      "countries": ["us", "ca", "uk", "in", "ph", "ng", "ke", "other"],
-      "hours": ["under5", "5-10", "10-20", "20+"],
+      "experience": [
+        "none",
+        "side",
+        "pro"
+      ],
+      "education": [
+        "none",
+        "college",
+        "bachelors",
+        "advanced"
+      ],
+      "countries": [
+        "us",
+        "ca",
+        "uk",
+        "in",
+        "ph",
+        "ng",
+        "ke",
+        "other"
+      ],
+      "hours": [
+        "under5",
+        "5-10",
+        "10-20",
+        "20+"
+      ],
       "pay_style": "ceiling",
       "gate": "written",
-      "strength": ["generalist", "coding", "professional"]
+      "strength": [
+        "generalist",
+        "coding",
+        "professional"
+      ]
     },
     "reasons": {
       "countries:global": "Open to contributors in most countries, including yours.",
@@ -57,7 +114,8 @@
       "pay_style:ceiling": "Rates scale hard with project type — the ceiling is high if you qualify up.",
       "hours:20+": "Enough concurrent projects that heavy hours are realistic when queues are live.",
       "experience:none": "Generalist queues take contributors with no prior AI-work history."
-    }
+    },
+    "referral_threshold": ""
   },
   {
     "slug": "mercor",
@@ -66,19 +124,45 @@
     "last_checked": "2026-09",
     "blurb": "Expert marketplace. AI-conducted video interview, then matched to high-rate expert projects.",
     "detail": "You complete an AI video interview once, and that interview becomes your profile for matching. Rates are among the highest in the category, but matching strongly favours documented professional expertise — this is not a beginner platform.",
-    "pay": { "display": "$65–90/hr typical for matched experts", "as_of": "2026-09", "source": "advertised" },
-    "url": "https://mercor.com",
-    "disclosed": false,
+    "pay": {
+      "display": "$65–90/hr typical for matched experts",
+      "as_of": "2026-09",
+      "source": "advertised"
+    },
+    "url": "https://t.mercor.com/4pchP",
+    "disclosed": true,
     "referral_terms": "",
     "honest_note": "Plenty of applicants complete the interview and are never matched to a project.",
     "tags": {
-      "experience": ["pro", "side"],
-      "education": ["bachelors", "advanced"],
-      "countries": ["us", "ca", "uk", "in", "ph", "ng", "ke", "other"],
-      "hours": ["5-10", "10-20", "20+"],
+      "experience": [
+        "pro",
+        "side"
+      ],
+      "education": [
+        "bachelors",
+        "advanced"
+      ],
+      "countries": [
+        "us",
+        "ca",
+        "uk",
+        "in",
+        "ph",
+        "ng",
+        "ke",
+        "other"
+      ],
+      "hours": [
+        "5-10",
+        "10-20",
+        "20+"
+      ],
       "pay_style": "ceiling",
       "gate": "video",
-      "strength": ["professional", "coding"]
+      "strength": [
+        "professional",
+        "coding"
+      ]
     },
     "reasons": {
       "gate:video": "One AI video interview is the whole gate — no repeated assessments.",
@@ -86,7 +170,8 @@
       "experience:pro": "Professional experience is exactly what their matching rewards.",
       "pay_style:ceiling": "One of the highest advertised rate bands in the category.",
       "strength:professional": "Built around specialist expertise rather than generalist volume."
-    }
+    },
+    "referral_threshold": ""
   },
   {
     "slug": "micro1",
@@ -95,19 +180,45 @@
     "last_checked": "2026-09",
     "blurb": "AI-vetted talent network. An AI interview screens you once, then you're matched to AI-training work.",
     "detail": "Screening is a single AI-conducted interview covering technical and communication ability. Strongest fit for engineers and technical specialists; matched roles run longer than task-marketplace work.",
-    "pay": { "display": "$20–45/hr typical", "as_of": "2026-09", "source": "advertised" },
+    "pay": {
+      "display": "$20–45/hr typical",
+      "as_of": "2026-09",
+      "source": "advertised"
+    },
     "url": "https://micro1.ai",
     "disclosed": false,
     "referral_terms": "",
     "honest_note": "Matching depends on open client demand, so acceptance doesn't mean immediate work.",
     "tags": {
-      "experience": ["side", "pro"],
-      "education": ["college", "bachelors", "advanced"],
-      "countries": ["us", "ca", "uk", "in", "ph", "ng", "ke", "other"],
-      "hours": ["10-20", "20+"],
+      "experience": [
+        "side",
+        "pro"
+      ],
+      "education": [
+        "college",
+        "bachelors",
+        "advanced"
+      ],
+      "countries": [
+        "us",
+        "ca",
+        "uk",
+        "in",
+        "ph",
+        "ng",
+        "ke",
+        "other"
+      ],
+      "hours": [
+        "10-20",
+        "20+"
+      ],
       "pay_style": "steady",
       "gate": "video",
-      "strength": ["coding", "professional"]
+      "strength": [
+        "coding",
+        "professional"
+      ]
     },
     "reasons": {
       "gate:video": "A single AI video interview replaces the usual multi-round screen.",
@@ -115,7 +226,8 @@
       "hours:20+": "Matched engagements assume sustained hours rather than dipping in.",
       "countries:global": "Hires globally — open where you are.",
       "experience:pro": "Professional technical background is what their vetting looks for."
-    }
+    },
+    "referral_threshold": ""
   },
   {
     "slug": "alignerr",
@@ -124,19 +236,48 @@
     "last_checked": "2026-09",
     "blurb": "Labelbox's expert network. Task design and model evaluation, with a wide rate band by specialism.",
     "detail": "You apply, complete a skills assessment, then qualify into projects. The top of the rate band is reserved for scarce specialisms — medicine, law, advanced maths — while generalist evaluation work sits near the bottom.",
-    "pay": { "display": "$25–125/hr depending on specialism", "as_of": "2026-09", "source": "advertised" },
+    "pay": {
+      "display": "$25–125/hr depending on specialism",
+      "as_of": "2026-09",
+      "source": "advertised"
+    },
     "url": "https://alignerr.com",
     "disclosed": false,
     "referral_terms": "",
     "honest_note": "The headline $125/hr figure applies to a narrow band of specialists, not general applicants.",
     "tags": {
-      "experience": ["side", "pro"],
-      "education": ["college", "bachelors", "advanced"],
-      "countries": ["us", "ca", "uk", "in", "ph", "ng", "ke", "other"],
-      "hours": ["under5", "5-10", "10-20", "20+"],
+      "experience": [
+        "side",
+        "pro"
+      ],
+      "education": [
+        "college",
+        "bachelors",
+        "advanced"
+      ],
+      "countries": [
+        "us",
+        "ca",
+        "uk",
+        "in",
+        "ph",
+        "ng",
+        "ke",
+        "other"
+      ],
+      "hours": [
+        "under5",
+        "5-10",
+        "10-20",
+        "20+"
+      ],
       "pay_style": "ceiling",
       "gate": "written",
-      "strength": ["professional", "coding", "generalist"]
+      "strength": [
+        "professional",
+        "coding",
+        "generalist"
+      ]
     },
     "reasons": {
       "strength:professional": "Specialist fields sit at the top of their rate band.",
@@ -144,7 +285,8 @@
       "pay_style:ceiling": "The widest rate range of any platform listed here.",
       "gate:written": "Entry is a skills assessment, not an interview.",
       "hours:under5": "Task-based, so small weekly commitments still work."
-    }
+    },
+    "referral_threshold": ""
   },
   {
     "slug": "handshake-ai",
@@ -153,26 +295,50 @@
     "last_checked": "2026-09",
     "blurb": "Beginner-friendly AI-work route with no interview stage. Research-backed project rates.",
     "detail": "Handshake's AI arm recruits contributors for model-training research projects. Notable mainly for being one of the few routes at this rate band with no interview — you apply, qualify, and start.",
-    "pay": { "display": "$25–50/hr typical", "as_of": "2026-09", "source": "advertised" },
-    "url": "https://joinhandshake.com",
-    "disclosed": false,
+    "pay": {
+      "display": "$25–50/hr typical",
+      "as_of": "2026-09",
+      "source": "advertised"
+    },
+    "url": "https://joinhandshake.com/move-program/referral?referralCode=D7FC7A&utm_source=referral",
+    "disclosed": true,
     "referral_terms": "",
     "honest_note": "Country availability changes without notice — check before investing time in an application.",
     "tags": {
-      "experience": ["none", "side", "pro"],
-      "education": ["college", "bachelors", "advanced"],
-      "countries": ["us", "ca", "in"],
-      "hours": ["5-10", "10-20", "20+"],
+      "experience": [
+        "none",
+        "side",
+        "pro"
+      ],
+      "education": [
+        "college",
+        "bachelors",
+        "advanced"
+      ],
+      "countries": [
+        "us",
+        "ca",
+        "in"
+      ],
+      "hours": [
+        "5-10",
+        "10-20",
+        "20+"
+      ],
       "pay_style": "steady",
       "gate": "none",
-      "strength": ["generalist", "professional"]
+      "strength": [
+        "generalist",
+        "professional"
+      ]
     },
     "reasons": {
       "gate:none": "A rare no-interview path to work in the $25–50/hr band.",
       "experience:none": "Explicitly positioned as beginner-friendly.",
       "pay_style:steady": "Predictable project hours are the whole pitch.",
       "countries:in": "Currently open to applicants in India."
-    }
+    },
+    "referral_threshold": ""
   },
   {
     "slug": "afterquery",
@@ -181,26 +347,51 @@
     "last_checked": "2026-09",
     "blurb": "YC-backed research data projects. Written application, technical and professional queues.",
     "detail": "Small, fast-moving outfit running data projects for frontier labs. Application is written, projects are usually fixed-scope, and technical contributors get first pick of the higher bands.",
-    "pay": { "display": "$25–75/hr by project", "as_of": "2026-09", "source": "advertised" },
-    "url": "https://afterquery.com",
-    "disclosed": false,
+    "pay": {
+      "display": "$25–75/hr by project",
+      "as_of": "2026-09",
+      "source": "advertised"
+    },
+    "url": "https://experts.afterquery.com/apply?ref=WIxsnTxFwPT6F4yDwlxWpqA48uX2",
+    "disclosed": true,
     "referral_terms": "",
     "honest_note": "Project-based, so income is lumpy rather than a steady weekly figure.",
     "tags": {
-      "experience": ["side", "pro"],
-      "education": ["college", "bachelors", "advanced"],
-      "countries": ["us", "ca", "uk", "in", "other"],
-      "hours": ["under5", "5-10", "10-20"],
+      "experience": [
+        "side",
+        "pro"
+      ],
+      "education": [
+        "college",
+        "bachelors",
+        "advanced"
+      ],
+      "countries": [
+        "us",
+        "ca",
+        "uk",
+        "in",
+        "other"
+      ],
+      "hours": [
+        "under5",
+        "5-10",
+        "10-20"
+      ],
       "pay_style": "ceiling",
       "gate": "written",
-      "strength": ["coding", "professional"]
+      "strength": [
+        "coding",
+        "professional"
+      ]
     },
     "reasons": {
       "gate:written": "Written application only — no video stage.",
       "strength:coding": "Technical contributors get the higher-rate project queues.",
       "hours:under5": "Fixed-scope projects suit small, irregular time blocks.",
       "pay_style:ceiling": "Rates scale with project difficulty rather than sitting flat."
-    }
+    },
+    "referral_threshold": ""
   },
   {
     "slug": "mindrift",
@@ -209,26 +400,58 @@
     "last_checked": "2026-09",
     "blurb": "Toloka's expert-contributor arm. Crowdtesting and QA for AI agents, task-based pay.",
     "detail": "You qualify into projects by specialism and are paid per task rather than per hour. Genuinely open to a wide range of countries, which makes it one of the more accessible entries on this list.",
-    "pay": { "display": "Task-based, ~$10–25/hr effective", "as_of": "2026-09", "source": "advertised" },
+    "pay": {
+      "display": "Task-based, ~$10–25/hr effective",
+      "as_of": "2026-09",
+      "source": "advertised"
+    },
     "url": "https://www.mindrift.ai",
     "disclosed": false,
     "referral_terms": "",
     "honest_note": "Task-based pay means your effective hourly rate depends heavily on your speed.",
     "tags": {
-      "experience": ["none", "side", "pro"],
-      "education": ["none", "college", "bachelors", "advanced"],
-      "countries": ["us", "ca", "uk", "in", "ph", "ng", "ke", "other"],
-      "hours": ["under5", "5-10", "10-20", "20+"],
+      "experience": [
+        "none",
+        "side",
+        "pro"
+      ],
+      "education": [
+        "none",
+        "college",
+        "bachelors",
+        "advanced"
+      ],
+      "countries": [
+        "us",
+        "ca",
+        "uk",
+        "in",
+        "ph",
+        "ng",
+        "ke",
+        "other"
+      ],
+      "hours": [
+        "under5",
+        "5-10",
+        "10-20",
+        "20+"
+      ],
       "pay_style": "either",
       "gate": "written",
-      "strength": ["generalist", "coding", "professional"]
+      "strength": [
+        "generalist",
+        "coding",
+        "professional"
+      ]
     },
     "reasons": {
       "countries:global": "One of the most widely available platforms on this list.",
       "hours:under5": "Task-based work you can pick up in short sessions.",
       "experience:none": "Entry projects don't assume prior AI-work experience.",
       "strength:generalist": "Generalist QA and evaluation projects run continuously."
-    }
+    },
+    "referral_threshold": ""
   },
   {
     "slug": "prolific",
@@ -237,26 +460,50 @@
     "last_checked": "2026-09",
     "blurb": "Paid research studies and AI evaluation tasks. No interview — sign up and start.",
     "detail": "Originally an academic research panel, now running AI evaluation studies alongside. Rates are modest but the floor is enforced by the platform, and there is no qualification gate to clear.",
-    "pay": { "display": "~£9/hr platform minimum", "as_of": "2026-09", "source": "advertised" },
+    "pay": {
+      "display": "~£9/hr platform minimum",
+      "as_of": "2026-09",
+      "source": "advertised"
+    },
     "url": "https://www.prolific.com",
     "disclosed": false,
     "referral_terms": "",
     "honest_note": "Study availability is the real limit — you can't reliably fill 20 hours a week here.",
     "tags": {
-      "experience": ["none", "side", "pro"],
-      "education": ["none", "college", "bachelors", "advanced"],
-      "countries": ["us", "ca", "uk", "other"],
-      "hours": ["under5", "5-10"],
+      "experience": [
+        "none",
+        "side",
+        "pro"
+      ],
+      "education": [
+        "none",
+        "college",
+        "bachelors",
+        "advanced"
+      ],
+      "countries": [
+        "us",
+        "ca",
+        "uk",
+        "other"
+      ],
+      "hours": [
+        "under5",
+        "5-10"
+      ],
       "pay_style": "steady",
       "gate": "none",
-      "strength": ["generalist"]
+      "strength": [
+        "generalist"
+      ]
     },
     "reasons": {
       "gate:none": "No interview and no assessment — sign up and take studies.",
       "hours:under5": "Designed for short sessions rather than full days.",
       "experience:none": "Zero experience required.",
       "pay_style:steady": "A platform-enforced minimum rate on every study."
-    }
+    },
+    "referral_threshold": ""
   },
   {
     "slug": "clickworker",
@@ -265,25 +512,52 @@
     "last_checked": "2026-09",
     "blurb": "Long-running microtask platform. Data collection, categorisation and short writing jobs.",
     "detail": "One of the older crowdwork platforms. You take qualification assessments per job type and are paid per task. Rates are low but availability is broad and the payout process is well established.",
-    "pay": { "display": "$5–15/hr effective, task-based", "as_of": "2026-09", "source": "advertised" },
+    "pay": {
+      "display": "$5–15/hr effective, task-based",
+      "as_of": "2026-09",
+      "source": "advertised"
+    },
     "url": "https://www.clickworker.com",
     "disclosed": false,
     "referral_terms": "",
     "honest_note": "Low rate band. Best treated as filler work, not a primary income.",
     "tags": {
-      "experience": ["none", "side"],
-      "education": ["none", "college", "bachelors"],
-      "countries": ["us", "ca", "uk", "in", "ph", "ng", "ke", "other"],
-      "hours": ["under5", "5-10", "10-20"],
+      "experience": [
+        "none",
+        "side"
+      ],
+      "education": [
+        "none",
+        "college",
+        "bachelors"
+      ],
+      "countries": [
+        "us",
+        "ca",
+        "uk",
+        "in",
+        "ph",
+        "ng",
+        "ke",
+        "other"
+      ],
+      "hours": [
+        "under5",
+        "5-10",
+        "10-20"
+      ],
       "pay_style": "steady",
       "gate": "written",
-      "strength": ["generalist"]
+      "strength": [
+        "generalist"
+      ]
     },
     "reasons": {
       "countries:global": "Available in most countries, including yours.",
       "experience:none": "No experience needed — short qualification tests per job type.",
       "hours:under5": "Microtasks fit into whatever time you have."
-    }
+    },
+    "referral_threshold": ""
   },
   {
     "slug": "toloka",
@@ -292,25 +566,53 @@
     "last_checked": "2026-09",
     "blurb": "Global crowdsourcing platform for data labelling and AI evaluation tasks.",
     "detail": "Task marketplace with a very wide country footprint. Simple tasks need no qualification; better-paid ones require passing a training module first. Payouts run through several international rails.",
-    "pay": { "display": "Task-based, ~$4–12/hr effective", "as_of": "2026-09", "source": "advertised" },
+    "pay": {
+      "display": "Task-based, ~$4–12/hr effective",
+      "as_of": "2026-09",
+      "source": "advertised"
+    },
     "url": "https://toloka.ai",
     "disclosed": false,
     "referral_terms": "",
     "honest_note": "Entry-level task rates are low; the training modules are where better pay unlocks.",
     "tags": {
-      "experience": ["none", "side"],
-      "education": ["none", "college", "bachelors"],
-      "countries": ["us", "ca", "uk", "in", "ph", "ng", "ke", "other"],
-      "hours": ["under5", "5-10", "10-20", "20+"],
+      "experience": [
+        "none",
+        "side"
+      ],
+      "education": [
+        "none",
+        "college",
+        "bachelors"
+      ],
+      "countries": [
+        "us",
+        "ca",
+        "uk",
+        "in",
+        "ph",
+        "ng",
+        "ke",
+        "other"
+      ],
+      "hours": [
+        "under5",
+        "5-10",
+        "10-20",
+        "20+"
+      ],
       "pay_style": "steady",
       "gate": "none",
-      "strength": ["generalist"]
+      "strength": [
+        "generalist"
+      ]
     },
     "reasons": {
       "gate:none": "Simple task queues open immediately with no qualification.",
       "countries:global": "One of the widest country footprints in the category.",
       "experience:none": "Built for contributors starting from zero."
-    }
+    },
+    "referral_threshold": ""
   },
   {
     "slug": "appen",
@@ -319,25 +621,55 @@
     "last_checked": "2026-09",
     "blurb": "Established data-annotation contractor. Search relevance, transcription and evaluation projects.",
     "detail": "A long-standing vendor to large tech companies. Projects are contract-based with fixed hours, and most require passing a qualification exam. Availability varies significantly by language and country.",
-    "pay": { "display": "$8–20/hr by project and country", "as_of": "2026-09", "source": "advertised" },
+    "pay": {
+      "display": "$8–20/hr by project and country",
+      "as_of": "2026-09",
+      "source": "advertised"
+    },
     "url": "https://www.appen.com",
     "disclosed": false,
     "referral_terms": "",
     "honest_note": "Qualification exams are long and unpaid, and projects can end abruptly.",
     "tags": {
-      "experience": ["none", "side", "pro"],
-      "education": ["none", "college", "bachelors", "advanced"],
-      "countries": ["us", "ca", "uk", "in", "ph", "ng", "ke", "other"],
-      "hours": ["5-10", "10-20", "20+"],
+      "experience": [
+        "none",
+        "side",
+        "pro"
+      ],
+      "education": [
+        "none",
+        "college",
+        "bachelors",
+        "advanced"
+      ],
+      "countries": [
+        "us",
+        "ca",
+        "uk",
+        "in",
+        "ph",
+        "ng",
+        "ke",
+        "other"
+      ],
+      "hours": [
+        "5-10",
+        "10-20",
+        "20+"
+      ],
       "pay_style": "steady",
       "gate": "written",
-      "strength": ["generalist", "professional"]
+      "strength": [
+        "generalist",
+        "professional"
+      ]
     },
     "reasons": {
       "countries:global": "Recruits in a very wide range of countries and languages.",
       "pay_style:steady": "Contract projects come with fixed, predictable hours.",
       "gate:written": "Entry is a written qualification exam."
-    }
+    },
+    "referral_threshold": ""
   },
   {
     "slug": "surge-ai",
@@ -346,25 +678,50 @@
     "last_checked": "2026-09",
     "blurb": "RLHF and human-feedback data for frontier labs. Written screening, specialist queues.",
     "detail": "Focused on high-quality human feedback rather than bulk labelling. Screening is written and selective; accepted contributors work on preference ranking, red-teaming and specialist evaluation.",
-    "pay": { "display": "$20–50/hr by queue", "as_of": "2026-09", "source": "advertised" },
+    "pay": {
+      "display": "$20–50/hr by queue",
+      "as_of": "2026-09",
+      "source": "advertised"
+    },
     "url": "https://www.surgehq.ai",
     "disclosed": false,
     "referral_terms": "",
     "honest_note": "Selective intake — a written screen that many applicants don't clear.",
     "tags": {
-      "experience": ["side", "pro"],
-      "education": ["college", "bachelors", "advanced"],
-      "countries": ["us", "ca", "uk", "other"],
-      "hours": ["under5", "5-10", "10-20"],
+      "experience": [
+        "side",
+        "pro"
+      ],
+      "education": [
+        "college",
+        "bachelors",
+        "advanced"
+      ],
+      "countries": [
+        "us",
+        "ca",
+        "uk",
+        "other"
+      ],
+      "hours": [
+        "under5",
+        "5-10",
+        "10-20"
+      ],
       "pay_style": "ceiling",
       "gate": "written",
-      "strength": ["generalist", "professional", "coding"]
+      "strength": [
+        "generalist",
+        "professional",
+        "coding"
+      ]
     },
     "reasons": {
       "gate:written": "Written screening only — no video interview stage.",
       "strength:professional": "Specialist evaluation queues pay above the generalist band.",
       "hours:under5": "Queue-based work that fits irregular schedules."
-    }
+    },
+    "referral_threshold": ""
   },
   {
     "slug": "pila8",
@@ -373,19 +730,42 @@
     "last_checked": "2026-09",
     "blurb": "Record short voice and video clips that train speech AI. No interview — a mic check is the gate.",
     "detail": "You record short prompted clips from your phone. There is no interview: a microphone check and a sample recording are the whole entry process. Bonuses stack for daily streaks, language rarity and video clips.",
-    "pay": { "display": "~$0.10/min base (~$6/hr) · bonuses stack", "as_of": "2026-09", "source": "advertised" },
+    "pay": {
+      "display": "~$0.10/min base (~$6/hr) · bonuses stack",
+      "as_of": "2026-09",
+      "source": "advertised"
+    },
     "url": "https://pila8.com",
     "disclosed": false,
     "referral_terms": "",
     "honest_note": "Low base rate, a payout minimum, and earnings sit in a maturity hold before withdrawal.",
     "tags": {
-      "experience": ["none", "side"],
-      "education": ["none", "college", "bachelors", "advanced"],
-      "countries": ["in", "ph", "ng", "ke", "other"],
-      "hours": ["under5", "5-10"],
+      "experience": [
+        "none",
+        "side"
+      ],
+      "education": [
+        "none",
+        "college",
+        "bachelors",
+        "advanced"
+      ],
+      "countries": [
+        "in",
+        "ph",
+        "ng",
+        "ke",
+        "other"
+      ],
+      "hours": [
+        "under5",
+        "5-10"
+      ],
       "pay_style": "either",
       "gate": "none",
-      "strength": ["generalist"]
+      "strength": [
+        "generalist"
+      ]
     },
     "reasons": {
       "gate:none": "No interview at all — a mic check and a short sample is the whole gate.",
@@ -394,7 +774,8 @@
       "countries:in": "Payout rails are confirmed working in India.",
       "countries:ng": "Payout rails are confirmed working in Nigeria.",
       "countries:ke": "Payout rails are confirmed working in Kenya."
-    }
+    },
+    "referral_threshold": ""
   },
   {
     "slug": "babel-audio",
@@ -403,25 +784,52 @@
     "last_checked": "2026-09",
     "blurb": "Get paid for recorded voice conversations used to train speech models.",
     "detail": "You hold prompted conversations that are recorded and used as speech training data. Entry is a voice sample rather than an interview, and rates sit well above the microtask band for what is fairly light work.",
-    "pay": { "display": "$17.50–28/hr", "as_of": "2026-09", "source": "advertised" },
+    "pay": {
+      "display": "$17.50–28/hr",
+      "as_of": "2026-09",
+      "source": "advertised"
+    },
     "url": "https://babel.audio",
     "disclosed": false,
     "referral_terms": "",
     "honest_note": "Session availability is limited and depends on which languages they need that week.",
     "tags": {
-      "experience": ["none", "side"],
-      "education": ["none", "college", "bachelors", "advanced"],
-      "countries": ["us", "ca", "uk", "in", "ph", "ng", "ke", "other"],
-      "hours": ["under5", "5-10"],
+      "experience": [
+        "none",
+        "side"
+      ],
+      "education": [
+        "none",
+        "college",
+        "bachelors",
+        "advanced"
+      ],
+      "countries": [
+        "us",
+        "ca",
+        "uk",
+        "in",
+        "ph",
+        "ng",
+        "ke",
+        "other"
+      ],
+      "hours": [
+        "under5",
+        "5-10"
+      ],
       "pay_style": "steady",
       "gate": "none",
-      "strength": ["generalist"]
+      "strength": [
+        "generalist"
+      ]
     },
     "reasons": {
       "gate:none": "A voice sample is the gate — no interview, no written test.",
       "experience:none": "No experience required; you just need to speak clearly.",
       "hours:under5": "Sessions are short and booked around your schedule.",
       "pay_style:steady": "A flat hourly rate rather than per-task piece rates."
-    }
+    },
+    "referral_threshold": ""
   }
 ]
