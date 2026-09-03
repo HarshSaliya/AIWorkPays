@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pick a direction — aiworkpays</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light dark;--paper:#FCFCFD;--ink:#101828;--soft:#475467;--rule:#E4E7EC;--accent:#8A2B22}
+@media(prefers-color-scheme:dark){:root{--paper:#14120F;--ink:#EDE7D9;--soft:#A79F8D;--rule:#2E2A22;--accent:#D4694E}}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"IBM Plex Sans",system-ui,sans-serif;line-height:1.6}
+.wrap{max-width:52rem;margin-inline:auto;padding:3rem 1.5rem}
+h1{font-size:1.9rem;letter-spacing:-.02em;margin:0 0 .5rem}
+.lede{color:var(--soft);margin:0 0 2.5rem;max-width:52ch}
+.opt{display:block;border:1px solid var(--rule);border-radius:8px;padding:1.25rem 1.4rem;margin-bottom:1rem;
+     text-decoration:none;color:inherit}
+.opt:hover{border-color:var(--accent)}
+.opt h2{font-size:1.1rem;margin:0 0 .3rem;display:flex;align-items:baseline;gap:.6rem}
+.opt .tag{font:600 .68rem "IBM Plex Mono",monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.opt p{color:var(--soft);margin:0;font-size:.92rem}
+.note{border-left:3px solid var(--accent);padding-left:1rem;color:var(--soft);font-size:.9rem;margin-top:2.5rem}
+code{font-family:"IBM Plex Mono",monospace;font-size:.85em}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Three directions — pick one</h1>
+  <p class="lede">Each one is a real page pulling the real 15 platforms from <code>data/platforms.json</code>, so you're comparing actual content. Open them, look on your phone too, then tell me the letter.</p>
+
+  <a class="opt" href="a-bold.html">
+    <h2>Mockup A <span class="tag">Bold marketing</span></h2>
+    <p>Dark hero block, huge headline, platform cards with the top rate as the hero number, monogram marks, chunky offset-shadow cards. Loudest and most conversion-shaped.</p>
+  </a>
+
+  <a class="opt" href="b-table.html">
+    <h2>Mockup B <span class="tag">Comparison table</span></h2>
+    <p>A real sortable spec sheet — click any column to sort, filter by country and entry gate. Reads as research, not promotion. Collapses to stacked cards on mobile.</p>
+  </a>
+
+  <a class="opt" href="c-editorial.html">
+    <h2>Mockup C <span class="tag">Editorial, pushed harder</span></h2>
+    <p>Oversized Bodoni masthead, drop cap, pull-quote, numbered index entries with a per-platform pull-quote. Premium magazine feel rather than a directory.</p>
+  </a>
+
+  <p class="note">
+    These live in <code>frontend/_mockups/</code>. They're marked <code>noindex</code>, not linked from the site,
+    and not in the sitemap. Once you pick one I'll roll it across all pages and delete this folder.
+  </p>
+</div>
+</body>
+</html>

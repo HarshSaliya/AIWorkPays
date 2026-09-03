@@ -168,6 +168,10 @@ a { color: inherit; }
 .btn--block { width: 100%; }
 .btn[disabled], .btn[aria-disabled="true"] { opacity: .45; cursor: not-allowed; filter: none; }
 
+/* Header CTA — hidden on narrow screens, where the nav already wraps. */
+.masthead__cta { padding: .5rem .85rem; font-size: .82rem; }
+@media (max-width: 64rem) { .masthead__cta { display: none; } }
+
 .theme-toggle {
   background: none; border: 1.5px solid var(--rule); color: var(--ink-soft);
   font: 600 .7rem var(--mono); padding: .3rem .5rem; border-radius: 3px; cursor: pointer;
@@ -389,11 +393,14 @@ select.chip {
 /* --- Article / prose ----------------------------------------------------- */
 
 .prose { max-width: 40rem; margin-inline: auto; }
-.prose h2 { margin-top: 2rem; }
+/* Article subheads sit below the display scale used for page titles. */
+.prose h2 { margin-top: 2.25rem; font-size: clamp(1.25rem, 2.6vw, 1.5rem); }
 .prose h3 { margin-top: 1.5rem; }
 .prose p, .prose li { color: var(--ink-soft); }
 .prose li { margin-bottom: .4rem; }
-.prose a { color: var(--accent); text-underline-offset: 3px; }
+/* :not(.btn) matters: without it this beats .btn's own color by specificity,
+   painting button text the same colour as its background — invisible text. */
+.prose a:not(.btn) { color: var(--accent); text-underline-offset: 3px; }
 .prose ul, .prose ol { padding-left: 1.2rem; }
 
 .article__meta {
@@ -427,6 +434,74 @@ select.chip {
 .card h3 { margin-bottom: .35rem; }
 .card p { color: var(--ink-soft); font-size: .9rem; margin: 0; }
 .card__meta { font: .7rem var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--ink-faint); margin-top: .7rem; }
+
+/* --- Guide index (reading list) ------------------------------------------ */
+
+.readlist { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--rule-hard); }
+.readlist__item { border-bottom: 1px solid var(--rule); }
+.readlist__link {
+  display: grid; grid-template-columns: 1fr auto; gap: .15rem .75rem;
+  align-items: baseline; padding: 1.05rem 0; text-decoration: none; color: inherit;
+}
+a.readlist__link:hover .readlist__title { color: var(--accent); }
+.readlist__title { font-size: 1.02rem; font-weight: 500; grid-column: 1; }
+.readlist__meta {
+  grid-column: 1; font: 500 .72rem var(--mono); letter-spacing: .06em;
+  text-transform: uppercase; color: var(--ink-faint);
+}
+.readlist__arrow { grid-column: 2; grid-row: 1 / span 2; color: var(--ink-faint); font-size: 1.05rem; }
+a.readlist__link:hover .readlist__arrow { color: var(--accent); }
+.readlist__soon {
+  font: 600 .68rem var(--mono); letter-spacing: .16em; text-transform: uppercase;
+  color: var(--ink-faint); margin: 2.25rem 0 .5rem;
+}
+.readlist--soon .readlist__title { color: var(--ink-faint); }
+.readlist--soon .readlist__link { cursor: default; }
+
+.prose__dek { font-size: 1.1rem; color: var(--ink-soft); margin-bottom: 1.75rem; }
+
+/* --- Guide CTA ------------------------------------------------------------ */
+
+.guide-cta {
+  border: 2px solid var(--rule-hard); border-radius: 2px;
+  padding: 1.4rem 1.5rem; margin: 2.5rem 0 2rem; background: var(--paper-sunk);
+}
+.guide-cta__kicker {
+  font: 600 .66rem var(--mono); letter-spacing: .16em; text-transform: uppercase;
+  color: var(--accent); margin: 0 0 .45rem;
+}
+.guide-cta__title { font-family: var(--display); font-size: 1.6rem; font-weight: 700; margin: 0 0 .35rem; }
+.guide-cta__pay {
+  font: .82rem var(--mono); font-variant-numeric: tabular-nums;
+  color: var(--ink); margin: 0 0 .9rem;
+}
+.guide-cta__pay .as-of { color: var(--ink-faint); }
+.guide-cta__note {
+  background: var(--note-bg); border-left: 3px solid var(--note-rule);
+  padding: .65rem .85rem; font-size: .875rem; color: var(--ink); margin: 0 0 1.1rem;
+}
+.guide-cta .disclosure-flag { margin-top: .6rem; }
+
+/* --- Referral hub table --------------------------------------------------- */
+
+.hub { overflow-x: auto; border: 1px solid var(--rule); margin: 1.75rem 0; }
+/* Break the table out of the 40rem prose column once there's room for it.
+   Margins are relative to the parent, not vw, so this can't cause overflow. */
+@media (min-width: 62rem) { .prose .hub { margin-inline: -8rem; } }
+.hub table { border-collapse: collapse; width: 100%; min-width: 40rem; }
+.hub th, .hub td { text-align: left; padding: .8rem 1rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+.hub thead th {
+  font: 600 .64rem var(--mono); letter-spacing: .14em; text-transform: uppercase;
+  color: var(--ink-faint); background: var(--paper-sunk); white-space: nowrap;
+}
+.hub tbody tr:last-child td { border-bottom: 0; }
+.hub .hub__name { font-weight: 600; white-space: nowrap; }
+.hub td { font-size: .875rem; color: var(--ink-soft); }
+.hub .btn { padding: .45rem .8rem; font-size: .78rem; white-space: nowrap; }
+.hub .none {
+  font: 500 .7rem var(--mono); letter-spacing: .08em; text-transform: uppercase;
+  color: var(--ink-faint); border: 1px dashed var(--rule); padding: .35rem .55rem; white-space: nowrap;
+}
 
 /* --- States -------------------------------------------------------------- */
 

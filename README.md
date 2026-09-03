@@ -30,8 +30,7 @@ frontend/
   quiz.html               # 7 questions -> top 3 cards + everything else ranked
   jobs.html               # individual job referrals
   guides.html             # guide index
-  guides/                 # 3 article shells (structure written, body text TODO)
-  countries/              # index + in, us, uk, ca, ph, ng, ke
+  guides/                 # 8 written guides + 2 listed as "coming next"
   disclosure.html         # referrals & disclosure policy
   about.html
   404.html
@@ -130,7 +129,8 @@ Only four fields change:
   "pay": { "display": "$20–30/hr", "as_of": "2026-09", "source": "advertised" },
   "url": "https://…",
   "disclosed": false,
-  "referral_terms": "",
+  "referral_terms": "",          // shown on the listing and in the referral hub
+  "referral_threshold": "",      // what has to happen before the referral counts
   "honest_note": "",
   "tags": {
     "experience": ["none","side","pro"],
@@ -145,8 +145,7 @@ Only four fields change:
 }
 ```
 
-`tags` drives both the quiz scoring and the country pages. A platform missing a country code will
-not appear on that country's page.
+`tags` drives the quiz scoring. `countries` is still used for the ledger's "Open to" filter.
 
 ---
 
@@ -154,7 +153,6 @@ not appear on that country's page.
 
 - [ ] Real referral links — set `url`, `disclosed`, `referral_terms` per platform
 - [ ] Replace the four placeholder entries in `data/jobs.json`
-- [ ] Write the guide bodies (structure and draft notes are in place)
 - [ ] Write the "Who runs it" paragraph on `about.html`
 - [ ] Buy the domain, then update `SITE.url` in `app.js`, the `<link rel="canonical">` in each page,
       `robots.txt` and `sitemap.xml` (currently `aiworkpays.example`)

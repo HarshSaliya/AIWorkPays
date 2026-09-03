@@ -332,7 +332,7 @@ function resultCard(r, i) {
     <p class="result-card__pay"><strong>Pay:</strong> ${esc(p.pay?.display || '—')} (${esc(p.pay?.source || 'advertised')}, as of ${esc(formatMonth(p.pay?.as_of))})</p>
     ${p.honest_note ? `<div class="note"><strong>Honest note:</strong> ${esc(p.honest_note)}</div>` : ''}
     <div style="margin-top:.9rem">
-      ${applyLink(p, 'quiz-result', `Go to ${p.name}`)}
+      ${applyLink(p, 'quiz-result', `Apply to ${p.name}`)}
       ${disclosureLine(p)}
     </div>
   </article>`;

@@ -50,7 +50,13 @@ async function getData(name) {
   if (!endpoint) throw new Error(`Unknown collection: ${name}`);
 
   const url = /^https?:|^\//.test(endpoint) ? endpoint : basePath() + endpoint;
-  const res = await fetch(url, { headers: { Accept: 'application/json' } });
+  // 'no-cache' revalidates with the server rather than serving a stale copy.
+  // This site's whole claim is that its figures are current — a cached rate or
+  // a cached referral link defeats the point, and it costs one 304 to avoid.
+  const res = await fetch(url, {
+    headers: { Accept: 'application/json' },
+    cache: 'no-cache'
+  });
   if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
 
   const data = await res.json();
@@ -184,7 +190,7 @@ function platformEntry(p, index) {
       </dl>
       ${p.honest_note ? `<div class="note"><strong>Honest note:</strong> ${esc(p.honest_note)}</div>` : ''}
       <div>
-        ${applyLink(p, 'platform', `Go to ${p.name}`)}
+        ${applyLink(p, 'platform', `Apply to ${p.name}`)}
         ${disclosureLine(p)}
       </div>
     </div>
@@ -318,6 +324,110 @@ async function renderJobs(mountId) {
 
 /* --- Guides -------------------------------------------------------------- */
 
+/* --- Guide CTA ----------------------------------------------------------
+   Renders the "join this platform" block at the end of a guide, driven by the
+   platform slug on the mount element. Set disclosed:true + a real referral URL
+   in platforms.json and every guide CTA updates with it. No page edits needed.
+   ------------------------------------------------------------------------ */
+
+/* --- Referral hub --------------------------------------------------------
+   Every platform, and whether a referral link exists for it. Deliberately does
+   not publish what the site earns — only that a material connection exists,
+   which is what disclosure requires.
+   ------------------------------------------------------------------------ */
+
+async function renderReferralHub(mountId) {
+  const mount = document.getElementById(mountId);
+  if (!mount) return;
+  setState(mount, 'Loading…');
+
+  let platforms;
+  try {
+    platforms = await getData('platforms');
+  } catch (err) {
+    setState(mount, `Could not load the platform list (${err.message}).`, true);
+    return;
+  }
+
+  // Platforms with a referral link first — that is what this page is for.
+  const rows = platforms.slice().sort((a, b) => Number(b.disclosed) - Number(a.disclosed));
+
+  mount.innerHTML = `
+    <div class="hub">
+      <table>
+        <thead><tr>
+          <th>Platform</th><th>What you get through my link</th>
+          <th>Qualifying threshold</th><th>Link</th>
+        </tr></thead>
+        <tbody>
+          ${rows.map((p) => `
+            <tr>
+              <td class="hub__name">${esc(p.name)}</td>
+              <td>${p.disclosed ? esc(p.referral_terms || 'Standard signup — no extra bonus published.') : '—'}</td>
+              <td>${p.disclosed ? esc(p.referral_threshold || 'Not published') : '—'}</td>
+              <td>${p.disclosed
+                ? applyLink(p, 'hub', 'Apply')
+                : '<span class="none">no referral link</span>'}</td>
+            </tr>`).join('')}
+        </tbody>
+      </table>
+    </div>`;
+}
+
+/* Small inline lists inside guide prose, rendered from the ledger so an
+   article can never quietly go stale. <ul data-list="no-gate"></ul> */
+async function renderInlineLists() {
+  const mounts = document.querySelectorAll('[data-list]');
+  if (!mounts.length) return;
+
+  let platforms;
+  try {
+    platforms = await getData('platforms');
+  } catch {
+    return;
+  }
+
+  mounts.forEach((el) => {
+    let items = [];
+    if (el.dataset.list === 'no-gate') {
+      items = platforms.filter((p) => p.tags?.gate === 'none')
+        .map((p) => `<strong>${esc(p.name)}</strong> — ${esc(p.pay?.display || '')}`);
+    } else if (el.dataset.list === 'top-pay') {
+      items = platforms.slice()
+        .sort((a, b) => payCeiling(b) - payCeiling(a)).slice(0, 5)
+        .map((p) => `<strong>${esc(p.name)}</strong> — ${esc(p.pay?.display || '')}`);
+    }
+    el.innerHTML = items.map((t) => `<li>${t}</li>`).join('');
+  });
+}
+
+async function renderGuideCtas() {
+  const mounts = document.querySelectorAll('[data-platform]');
+  if (!mounts.length) return;
+
+  let platforms;
+  try {
+    platforms = await getData('platforms');
+  } catch {
+    return; // a guide is still readable without its CTA
+  }
+
+  mounts.forEach((el) => {
+    const p = platforms.find((x) => x.slug === el.dataset.platform);
+    if (!p) return;
+
+    el.innerHTML = `
+      <div class="guide-cta">
+        <p class="guide-cta__kicker">Ready to apply?</p>
+        <h2 class="guide-cta__title">Join ${esc(p.name)}</h2>
+        <p class="guide-cta__pay">${esc(p.pay?.display || '')} <span class="as-of">(advertised, as of ${esc(formatMonth(p.pay?.as_of))})</span></p>
+        ${p.honest_note ? `<p class="guide-cta__note"><strong>Before you do:</strong> ${esc(p.honest_note)}</p>` : ''}
+        ${applyLink(p, 'guide-cta', `Apply to ${p.name}`)}
+        ${disclosureLine(p)}
+      </div>`;
+  });
+}
+
 async function renderGuides(mountId) {
   const mount = document.getElementById(mountId);
   if (!mount) return;
@@ -331,14 +441,31 @@ async function renderGuides(mountId) {
     return;
   }
 
-  mount.innerHTML = `<div class="cards">${guides.map((g) => `
-    <a class="card" href="${basePath()}guides/${esc(g.slug)}.html">
-      <h3>${esc(g.title)}</h3>
-      <p>${esc(g.dek)}</p>
-      <div class="card__meta">${esc(g.read_min)} min read · updated ${esc(formatMonth(g.updated))}${
-        g.status === 'draft' ? ' · draft' : ''
-      }</div>
-    </a>`).join('')}</div>`;
+  const live = guides.filter((g) => g.status !== 'soon');
+  const soon = guides.filter((g) => g.status === 'soon');
+
+  mount.innerHTML = `
+    <ul class="readlist">
+      ${live.map((g) => `
+        <li class="readlist__item">
+          <a class="readlist__link" href="${basePath()}guides/${esc(g.slug)}.html">
+            <span class="readlist__title">${esc(g.title)}</span>
+            <span class="readlist__meta">${esc(g.read_min)} min · ${esc(formatMonth(g.updated))}</span>
+            <span class="readlist__arrow" aria-hidden="true">→</span>
+          </a>
+        </li>`).join('')}
+    </ul>
+    ${soon.length ? `
+      <p class="readlist__soon">Coming next</p>
+      <ul class="readlist readlist--soon">
+        ${soon.map((g) => `
+          <li class="readlist__item">
+            <span class="readlist__link">
+              <span class="readlist__title">${esc(g.title)}</span>
+              <span class="readlist__meta">not written yet</span>
+            </span>
+          </li>`).join('')}
+      </ul>` : ''}`;
 }
 
 /* --- Theme toggle -------------------------------------------------------- */

@@ -1,26 +1,92 @@
 [
   {
-    "slug": "written-assessment",
-    "title": "How the written assessment actually works",
-    "dek": "Most AI-work platforms gate entry behind a written test rather than a CV. What they're measuring, and what fails people.",
+    "slug": "how-long-until-you-get-paid",
+    "title": "How long until you actually get paid?",
+    "dek": "Withdrawal minimums, maturity holds and payout rails — the three things that sit between finishing work and having the money.",
     "read_min": 6,
     "updated": "2026-09",
-    "status": "draft"
+    "status": "live",
+    "platform": ""
   },
   {
-    "slug": "payout-rails",
-    "title": "Getting paid: payout rails by country",
-    "dek": "PayPal, Wise, Payoneer, Dots and direct bank transfer — which platforms use what, and where each one actually lands.",
-    "read_min": 8,
+    "slug": "do-you-need-a-degree",
+    "title": "Do you need a degree to get AI work?",
+    "dek": "For most of these platforms, no. Here's which ones genuinely don't care, and which ones quietly do.",
+    "read_min": 5,
     "updated": "2026-09",
-    "status": "draft"
+    "status": "live",
+    "platform": ""
+  },
+  {
+    "slug": "written-assessment",
+    "title": "How the written assessment actually works",
+    "dek": "Most platforms gate entry behind a written test rather than a CV. What they're measuring, and what fails people.",
+    "read_min": 6,
+    "updated": "2026-09",
+    "status": "live",
+    "platform": "dataannotation"
   },
   {
     "slug": "red-flags",
-    "title": "Red flags in AI-work platforms",
-    "dek": "Unpaid qualification marathons, vanishing projects, withdrawal minimums designed not to be met. How to spot them early.",
+    "title": "Red flags: how to spot a platform that won't pay you",
+    "dek": "Unpaid qualification marathons, withdrawal minimums designed not to be met, and anyone charging you to start.",
     "read_min": 5,
     "updated": "2026-09",
-    "status": "draft"
+    "status": "live",
+    "platform": ""
+  },
+  {
+    "slug": "payout-rails",
+    "title": "Which payout methods reach your country?",
+    "dek": "PayPal, Wise, Payoneer and direct transfer — which platforms use what, and where each one actually lands.",
+    "read_min": 7,
+    "updated": "2026-09",
+    "status": "live",
+    "platform": ""
+  },
+  {
+    "slug": "no-interview-platforms",
+    "title": "Which platforms have no interview at all?",
+    "dek": "If you don't want a video call or a long assessment, this is the short list — and what each one costs you in pay.",
+    "read_min": 4,
+    "updated": "2026-09",
+    "status": "live",
+    "platform": "babel-audio"
+  },
+  {
+    "slug": "is-there-a-dataannotation-referral-code",
+    "title": "Is there a DataAnnotation referral code?",
+    "dek": "The honest answer, why codes for sale are fake, and where the real referral programmes are.",
+    "read_min": 4,
+    "updated": "2026-09",
+    "status": "live",
+    "platform": "dataannotation"
+  },
+  {
+    "slug": "highest-paying-platforms",
+    "title": "Which platform pays the most?",
+    "dek": "The honest answer is 'it depends what you can prove'. Here's the advertised ceiling versus what most people actually see.",
+    "read_min": 6,
+    "updated": "2026-09",
+    "status": "live",
+    "platform": "mercor"
+  },
+  {
+    "slug": "mercor-vs-micro1",
+    "title": "Mercor vs micro1: which should you apply to?",
+    "dek": "Both screen you with an AI video interview. They reward very different things.",
+    "read_min": 5,
+    "updated": "2026-09",
+    "status": "soon",
+    "platform": "mercor"
+  },
+  {
+    "slug": "ai-work-taxes",
+    "title": "AI training income and tax",
+    "dek": "You're a contractor on almost every one of these platforms. What that means before the money arrives.",
+    "read_min": 6,
+    "updated": "2026-09",
+    "status": "soon",
+    "platform": ""
   }
 ]
