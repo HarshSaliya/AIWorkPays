@@ -831,5 +831,60 @@
       "pay_style:steady": "A flat hourly rate rather than per-task piece rates."
     },
     "referral_threshold": ""
+  },
+  {
+    "slug": "ethos-ai",
+    "name": "Ethos AI",
+    "status": "paid",
+    "last_checked": "2026-09",
+    "blurb": "Expert network matching senior professionals to paid AI evaluation, consulting and advisory work. An AI voice screen replaces a traditional interview.",
+    "detail": "Companies post individual expert roles — editorial, engineering, operations, communications, and more — each with its own posted rate. Entry is a short AI-conducted voice screen rather than a multi-round interview. Positioned for people with real, senior-level industry experience rather than beginners.",
+    "pay": {
+      "display": "$70–225/hr, varies by role",
+      "as_of": "2026-09",
+      "source": "advertised"
+    },
+    "url": "https://agent.askethos.com/refer/4euyc69r00t4",
+    "disclosed": true,
+    "referral_terms": "",
+    "referral_threshold": "",
+    "honest_note": "The $225/hr figure is from a single specialist legal listing, not typical — most posted roles sit in the $70-110/hr band.",
+    "tags": {
+      "experience": [
+        "pro"
+      ],
+      "education": [
+        "bachelors",
+        "advanced"
+      ],
+      "countries": [
+        "us",
+        "ca",
+        "uk",
+        "in",
+        "ph",
+        "ng",
+        "ke",
+        "other"
+      ],
+      "hours": [
+        "under5",
+        "5-10",
+        "10-20",
+        "20+"
+      ],
+      "pay_style": "ceiling",
+      "gate": "video",
+      "strength": [
+        "professional"
+      ]
+    },
+    "reasons": {
+      "gate:video": "A short AI voice screen replaces a traditional multi-round interview.",
+      "experience:pro": "Roles are pitched at senior, already-established professionals, not beginners.",
+      "strength:professional": "Every listing is a specialist professional role, not generalist work.",
+      "pay_style:ceiling": "Each listing posts its own rate, and the range across specialisms is wide.",
+      "countries:global": "Open to experts in most countries, including yours."
+    }
   }
 ]
