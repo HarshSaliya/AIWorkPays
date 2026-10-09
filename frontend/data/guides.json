@@ -1,5 +1,23 @@
 [
   {
+    "slug": "handshake-ai-review",
+    "title": "My Handshake AI review",
+    "dek": "Mixed, leaning negative. The review process is what made it exhausting, not the work itself.",
+    "read_min": 4,
+    "updated": "2026-09",
+    "status": "live",
+    "platform": "handshake-ai"
+  },
+  {
+    "slug": "afterquery-review",
+    "title": "My AfterQuery review",
+    "dek": "Disappointing as a candidate — poor communication, and a project cancelled with no warning.",
+    "read_min": 4,
+    "updated": "2026-09",
+    "status": "live",
+    "platform": "afterquery"
+  },
+  {
     "slug": "how-long-until-you-get-paid",
     "title": "How long until you actually get paid?",
     "dek": "Withdrawal minimums, maturity holds and payout rails — the three things that sit between finishing work and having the money.",
